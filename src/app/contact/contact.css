@@ -1,0 +1,129 @@
+/* CONTACT HERO */
+.contact-hero {
+  position: relative;
+  height: 40vh;
+  background: url("https://images.unsplash.com/photo-1553621042-f6e147245754") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.contact-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #d4af37;
+}
+
+.contact-hero-content p {
+  font-size: 18px;
+  color: #eee;
+}
+
+/* CONTACT DETAILS */
+.contact-details {
+  padding: 80px 20px;
+  background: #0e0e0e;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid #d4af37;
+}
+
+.contact-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* CONTACT FORM */
+.contact-form-section {
+  padding: 80px 20px;
+  background: #121212;
+  text-align: center;
+}
+
+.form-box {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.form-box h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #d4af37;
+  margin-bottom: 30px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #ccc;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #000;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  transform: translateY(-3px);
+}

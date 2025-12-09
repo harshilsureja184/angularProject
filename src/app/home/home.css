@@ -1,0 +1,176 @@
+/* GENERAL */
+section {
+  padding: 100px 20px;
+}
+
+.hero {
+  min-height: 90vh;
+  background: url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe")
+    center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 720px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-badge {
+  color: #d4af37;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #d4af37;
+}
+
+.hero p {
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn.gold {
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #000;
+}
+
+.btn.gold:hover {
+  transform: translateY(-3px);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+.btn.outline:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+/* ABOUT */
+.about {
+  background: #0e0e0e;
+  text-align: center;
+}
+
+.about-box {
+  max-width: 700px;
+  margin: auto;
+}
+
+.section-tag {
+  color: #d4af37;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.about h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.about p {
+  color: #bbb;
+  line-height: 1.8;
+}
+
+/* FEATURES */
+.features {
+  background: #121212;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 16px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  border: 1px solid #d4af37;
+}
+
+.feature-card h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #0a0a0a, #000);
+  text-align: center;
+}
+
+.cta-box {
+  max-width: 600px;
+  margin: auto;
+}
+
+.cta h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
