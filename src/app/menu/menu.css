@@ -96,3 +96,23 @@
   font-size: 18px;
   color: #f5d76e;
 }
+
+.add-to-cart {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 0;
+  background: #c59d5f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #b38a4c;
+  transform: translateY(-2px);
+}
+
