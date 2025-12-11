@@ -1,0 +1,61 @@
+<div class="bill-container">
+  <h2>Restaurant Bill</h2>
+  
+  <table class="bill-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="billBody"></tbody>
+  </table>
+
+  <div class="final-total">
+    Final Total: ₹<span id="finalAmount">0</span>
+  </div>
+</div>
+
+<script>
+    let bill = [];
+
+function addToCart(name, price) {
+  // Check if item already exists
+  let existingItem = bill.find(item => item.name === name);
+
+  if (existingItem) {
+    existingItem.qty++;
+    existingItem.total = existingItem.qty * price;
+  } else {
+    bill.push({ name, qty: 1, total: price });
+  }
+
+  updateBill();
+}
+
+function updateBill() {
+  let billBody = document.getElementById("billBody");
+  let finalTotal = 0;
+
+  billBody.innerHTML = "";
+
+  bill.forEach(item => {
+    finalTotal += item.total;
+
+    let row = `
+      <tr>
+        <td>${item.name}</td>
+        <td>${item.qty}</td>
+        <td>${item.total}</td>
+      </tr>
+    `;
+
+    billBody.innerHTML += row;
+  });
+
+  document.getElementById("finalTotal").innerText = finalTotal;
+}
+
+</script>

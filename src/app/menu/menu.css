@@ -1,100 +1,44 @@
 /* MENU HERO */
 .menu-hero {
+  height: 180px; /* less height */
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092')
+    center/cover no-repeat;
   position: relative;
-  height: 50vh;
-  background: url("https://images.unsplash.com/photo-1604908177525-08ef58f94da3") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 12px;
+  margin: 15px;
+  overflow: hidden;
+  opacity: 0.8;
 }
 
+/* Luxury Glass Overlay */
 .menu-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
 }
 
+/* Centered Content */
 .menu-hero-content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 .menu-hero-content h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: #d4af37;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 
 .menu-hero-content p {
-  font-size: 18px;
-  color: #eee;
-}
-
-/* MENU SECTION */
-.menu-section {
-  padding: 80px 20px;
-  background: #0e0e0e;
-}
-
-.menu-category {
-  font-family: "Playfair Display", serif;
-  font-size: 36px;
-  color: #d4af37;
-  margin: 40px 0 20px;
-  text-align: center;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* MENU CARD */
-.menu-card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 25px;
-  border-radius: 20px;
-  text-align: center;
-  color: #fff;
-  backdrop-filter: blur(10px);
-  transition: 0.3s ease;
-}
-
-.menu-card:hover {
-  transform: translateY(-8px);
-  border: 1px solid #d4af37;
-}
-
-.menu-card h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 22px;
-  color: #d4af37;
-  margin-bottom: 10px;
-}
-
-.menu-card img {
-  width: 100%;
-  height: 180px; /* adjust height as needed */
-  object-fit: cover;
-  border-radius: 16px 16px 0 0; /* rounded top corners */
-  margin-bottom: 15px;
-}
-
-.menu-card p {
-  font-size: 16px;
-  color: #ccc;
-  margin-bottom: 15px;
-}
-
-.menu-card .price {
-  font-weight: bold;
-  font-size: 18px;
-  color: #f5d76e;
+  font-size: 20px;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
 }
 
 .add-to-cart {
@@ -116,3 +60,27 @@
   transform: translateY(-2px);
 }
 
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.menu-btn {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #d4a017, #f8d477);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+  background: linear-gradient(135deg, #b48710, #e6c163);
+  transform: translateY(-3px);
+}

@@ -58,7 +58,7 @@ section {
 .btn {
   padding: 14px 32px;
   border-radius: 50px;
-  font-size: 15px;
+  font-size: 22px;
   cursor: pointer;
   border: none;
   transition: 0.3s ease;
@@ -86,32 +86,86 @@ section {
 
 /* ABOUT */
 .about {
-  background: #0e0e0e;
+  background: linear-gradient(to right, #0e0e0e, #1a1a1a);
   text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-box {
-  max-width: 700px;
+  max-width: 1200px;
   margin: auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
 }
 
 .section-tag {
+  display: inline-block;
   color: #d4af37;
   font-size: 14px;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .about h2 {
   font-family: "Playfair Display", serif;
-  font-size: 42px;
+  font-size: 38px;
   margin: 20px 0;
   color: #fff;
+  font-weight: 700;
 }
 
 .about p {
-  color: #bbb;
+  color: #ddd;
   line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
 }
+
+.about-image {
+  margin-top: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+
+  .about-box {
+    padding: 30px 20px;
+  }
+}
+
 
 /* FEATURES */
 .features {
