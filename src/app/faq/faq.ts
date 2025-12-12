@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-faq',
-  imports: [RouterLink],
+  //imports: [RouterLink],
   templateUrl: './faq.html',
   styleUrl: './faq.css',
 })

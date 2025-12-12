@@ -9,7 +9,7 @@ import { Cart } from './cart/cart';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet , Header , Footer , Home , Menu , Cart , Contact ],
+  imports: [RouterOutlet , Header , Footer  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

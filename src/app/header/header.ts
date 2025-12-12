@@ -7,10 +7,10 @@ import { Cart } from '../cart/cart';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink , Home , Menu , Contact, Cart],
+  imports: [RouterLink ],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
 export class Header {
-
+  protected imgUrl = "logo.jpg";
 }

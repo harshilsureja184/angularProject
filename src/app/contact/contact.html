@@ -33,12 +33,17 @@
 <section class="contact-form-section">
   <div class="form-box">
     <h2>Send Us Feedback </h2>
+    <p style="color:honeydew">{{name ()}}</p>
     <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+  <input type="text" placeholder="Your Name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" required>
+      <input type="email" placeholder="Your Email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" required>
       <input type="text" placeholder="Subject" required>
       <textarea placeholder="Your Message" rows="5" required></textarea>
       <button type="submit" class="btn gold">Send Message</button>
+
+      <p style="color:honeydew">Name : {{ name() }}</p>
+
+      <p style="color:honeydew">{{email}}</p> 
     </form>
   </div>
 </section>
